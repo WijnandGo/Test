@@ -6,3 +6,4 @@ branca
 plotly
 matplotlib
 scikit-learn
+seaborn
