@@ -13,9 +13,8 @@ import seaborn as sns
 
 ##Data inladen
 
-df1 = pd.read_csv(r"C:\Users\goedh\OneDrive\Minor\Case 3\airports-extended-clean.csv",sep=';')
-df2 = pd.read_csv(r"C:\Users\goedh\OneDrive\Minor\Case 3\case3_data\case3\schedule_airport.csv")
-
+df1 = pd.read_csv("airports-extended-clean.csv", sep=';')
+df2 = pd.read_csv("case3_data/schedule_airport.csv")
 #Kolomnaam veranderen 
 df2 = df2.rename(columns={'STD' : 'date', 'STA_STD_ltc' : 'gepl_aank', 'ATA_ATD_ltc' : 'werk_aank'})
 #Dataset merge, op luchthaven/code
